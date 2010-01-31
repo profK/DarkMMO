@@ -21,7 +21,7 @@ and open the template in the editor.
         <script type="text/javascript" >
             console.log("here");
             Ext.onReady(function(){
-                makeGui();
+                GUI.makeGui();
                 Utils.getHTMLDir("assets/tile_sets/", function(array){
                     // strip the file names
                     var tileSetFiles = []
@@ -49,7 +49,7 @@ and open the template in the editor.
                             getTileSet("assets/tile_sets/"+tileSetFiles.pop());
                         } else {
                             console.log(tilesetNames)
-                            setTileSets(tilesetNames)
+                            GUI.setTileSets(tilesetNames)
                         }
                     }
                     function getTileSet(url){
