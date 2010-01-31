@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="TileSets">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="TileSet">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element minOccurs="0" name="TileGroups">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0"
+                                            name="TileGroup">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="Tile">
+                                                  <xs:complexType>
+                                                  <xs:attribute name="name"/>
+                                                  <xs:attribute form="unqualified" name="tilenum"
+                                                  type="xs:int" use="required"/>
+                                                  <xs:attribute name="model" use="required"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="name"/>
+                                                <xs:attribute name="tileType"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                        <xs:attribute name="name" use="required"/>
+                        <xs:attribute name="displayName"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+C:\Users\jeff\Documents\NetBeansProjects\NWNResourceManager\dist\NWNResourceManager.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\jline.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\scala-compiler.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\scala-dbc.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\scala-library.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\scala-partest.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\scala-swing.jar;C:\Users\Jeff\JavaTechnologies\Scala\2.8.latest\lib\scalap.jar;C:\Users\jeff\Documents\NetBeansProjects\NWNToDMMOXML\build\classes
+-------
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\IteratorWrapper.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\IteratorWrapper.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\TileSetWriter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\TileSetWriter.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\IteratorWrapper.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\IteratorWrapper.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\IteratorWrapper.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> ..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\TileSetWriter.scala
+-------
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala -> classes\net\worldwizards\darkmmo\tools\ColladaWriter$$anonfun$writeInts$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala -> classes\net\worldwizards\darkmmo\tools\ColladaWriter.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\ColladaWriter.scala -> classes\net\worldwizards\darkmmo\tools\ColladaWriter$$anonfun$writeFloats$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$doLightNode$1$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$doMaterialsLibrary$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$convertQuatToAxisAngle$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$writeModelNode$1$2.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$doEffectsLibrary$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$doImagesLibrary$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$collectAllTextures$1$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$getVertexIndicies$1$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$writeModelNode$1$1$$anonfun$apply$2.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$writeModelNode$1$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$processNodeGeometry$1$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\MDL2Collada.scala -> classes\net\worldwizards\darkmmo\tools\MDL2Collada$$anonfun$writeModelNode$1$1$$anonfun$apply$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\TileSetWriter.scala -> classes\net\worldwizards\darkmmo\tools\TileSetWriter.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\IteratorWrapper.scala -> classes\net\worldwizards\darkmmo\tools\IteratorWrapper.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$main$3.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$processTileSet$2$$anonfun$apply$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$processTileSet$2.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$TileRecord.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$processTileSet$2$$anonfun$apply$2.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$main$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$processMdl$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$processTileSet$1.class
+..\..\..\..\workspace\NwnDataConverter\src\net\worldwizards\darkmmo\tools\NWNConverter.scala -> classes\net\worldwizards\darkmmo\tools\NWNConverter$$anonfun$main$2.class

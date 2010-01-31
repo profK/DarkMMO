@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http:schemae/ResourceGroup.xsd">
+    <TileSets baseDir="tile_sets">
+        <TileSet>tcn01.tls</TileSet>
+        <TileSet>tdc01.tls</TileSet>
+        <TileSet>tde01.tls</TileSet>
+        <TileSet>tdm01.tls</TileSet>
+        <TileSet>tdr01.tls</TileSet>
+        <TileSet>tds01.tls</TileSet>
+        <TileSet>tib01.tls</TileSet>
+        <TileSet>tic01.tls</TileSet>
+        <TileSet>tid01.tls</TileSet>
+        <TileSet>tii01.tls</TileSet>
+        <TileSet>tin01.tls</TileSet>
+        <TileSet>tms01.tls</TileSet>
+        <TileSet>ttd01.tls</TileSet>
+        <TileSet>ttf01.tls</TileSet>
+        <TileSet>tti01.tls</TileSet>
+        <TileSet>ttr01.tls</TileSet>
+        <TileSet>tts01.tls</TileSet>
+        <TileSet>ttu01.tls</TileSet>
+    </TileSets>
+</ResourceGroup>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tii01" displayName="Illithid Interior">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Cell" tilenum="78" model="tii01_e13_01"/>
+            <Tile name="Corridor Stairs Down" tilenum="29" model="tii01_b19_01"/>
+            <Tile name="Corridor Stairs Up" tilenum="28" model="tii01_b18_01"/>
+            <Tile name="Door Transition" tilenum="27" model="tii01_b17_01"/>
+            <Tile name="Resting Pod" tilenum="77" model="tii01_e14_01"/>
+            <Tile name="Transporter" tilenum="76" model="tii01_e15_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Fighting Pit" tilenum="59" model="tii01_e09_01"/>
+            <Tile name="Great Brain" tilenum="41" model="tii01_e03_01"/>
+            <Tile name="Observation Pit" tilenum="51" model="tii01_e06_01"/>
+            <Tile name="Resting Pods" tilenum="74" model="tii01_e12_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

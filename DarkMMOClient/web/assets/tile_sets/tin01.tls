@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tin01" displayName="City Interior">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Chessboard" tilenum="270" model="tall_b01_01"/>
+            <Tile name="Corridor Exit" tilenum="121" model="tin01_a07_02"/>
+            <Tile name="Corridor Exit Big" tilenum="104" model="tin01_a07_01"/>
+            <Tile name="Door Inn" tilenum="96" model="tin01_o13_01"/>
+            <Tile name="Door Kitchen" tilenum="97" model="tin01_p09_01"/>
+            <Tile name="Door Livingroom" tilenum="95" model="tin01_o09_01"/>
+            <Tile name="Door Shop" tilenum="98" model="tin01_p13_01"/>
+            <Tile name="Door Transition" tilenum="204" model="tin01_z20_01"/>
+            <Tile name="Inn Room" tilenum="59" model="tin01_i01_01"/>
+            <Tile name="Kitchen Corner Exit 1" tilenum="290" model="tin01_f01_07"/>
+            <Tile name="Kitchen Corner Exit 2" tilenum="291" model="tin01_f01_08"/>
+            <Tile name="Kitchen Corner Stairs Both" tilenum="288" model="tin01_f01_04"/>
+            <Tile name="Kitchen Corner Stairs Down" tilenum="289" model="tin01_f01_06"/>
+            <Tile name="Kitchen Corner Stairs Up" tilenum="287" model="tin01_f01_05"/>
+            <Tile name="Kitchen Room" tilenum="41" model="tin01_g01_01"/>
+            <Tile name="Livingroom" tilenum="23" model="tin01_e01_01"/>
+            <Tile name="Livingroom Corner Exit 1" tilenum="172" model="tin01_d01_07"/>
+            <Tile name="Livingroom Corner Exit 2" tilenum="171" model="tin01_d01_08"/>
+            <Tile name="Livingroom Corner Stairs Both" tilenum="284" model="tin01_d01_04"/>
+            <Tile name="Livingroom Corner Stairs Down" tilenum="286" model="tin01_d01_06"/>
+            <Tile name="Livingroom Corner Stairs Up" tilenum="285" model="tin01_d01_05"/>
+            <Tile name="Portal" tilenum="269" model="tall_a01_01"/>
+            <Tile name="Shop Room" tilenum="77" model="tin01_m01_01"/>
+            <Tile name="Stairs Down" tilenum="100" model="tin01_p16_01"/>
+            <Tile name="Stairs Up" tilenum="99" model="tin01_o16_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Barn 2x3" tilenum="261" model="tin01_q16_01"/>
+            <Tile name="Barracks 2x3" tilenum="211" model="tin01_w15_01"/>
+            <Tile name="Bordello 2x2" tilenum="266" model="tin01_s16_01"/>
+            <Tile name="Home Lower 1 2x2" tilenum="175" model="tin01_q02_01"/>
+            <Tile name="Home Lower 2 2x2" tilenum="186" model="tin01_s02_01"/>
+            <Tile name="Home Lower 3 2x2" tilenum="175" model="tin01_q02_01"/>
+            <Tile name="Home Lower 4 2x2" tilenum="186" model="tin01_s02_01"/>
+            <Tile name="Home Lower 5 2x2" tilenum="186" model="tin01_s02_01"/>
+            <Tile name="Home Upper 1 2x2" tilenum="182" model="tin01_q04_01"/>
+            <Tile name="Home Upper 2 2x2" tilenum="184" model="tin01_s04_01"/>
+            <Tile name="Home Upper 3 2x2" tilenum="182" model="tin01_q04_01"/>
+            <Tile name="Inn Room 1 1x2" tilenum="61" model="tin01_i04_01"/>
+            <Tile name="Inn Room 2 1x2" tilenum="63" model="tin01_i07_01"/>
+            <Tile name="Kitchen Room 1 1x2" tilenum="43" model="tin01_g04_01"/>
+            <Tile name="Kitchen Room 2 1x2" tilenum="45" model="tin01_g07_01"/>
+            <Tile name="Livingroom 1 1x2" tilenum="25" model="tin01_e04_01"/>
+            <Tile name="Livingroom 2 1x2" tilenum="27" model="tin01_e07_01"/>
+            <Tile name="Shop 1 1x2" tilenum="281" model="tin01_m04_02"/>
+            <Tile name="Shop 2 1x2" tilenum="283" model="tin01_m07_02"/>
+            <Tile name="Shop Room 1 1x2" tilenum="79" model="tin01_m04_01"/>
+            <Tile name="Shop Room 2 1x2" tilenum="81" model="tin01_m07_01"/>
+            <Tile name="Slum Home 1 2x2" tilenum="273" model="tin01_u02_01"/>
+            <Tile name="Slum Home 2 2x2" tilenum="276" model="tin01_u04_01"/>
+            <Tile name="Smithy 1x2" tilenum="258" model="tin01_v15_01"/>
+            <Tile name="Temple Evil 3x4" tilenum="219" model="tin01_q08_01"/>
+            <Tile name="Temple Good 4x4" tilenum="231" model="tin01_q12_01"/>
+            <Tile name="Temple Neutral 3x3" tilenum="246" model="tin01_u18_01"/>
+            <Tile name="Tent 2x2" tilenum="206" model="tin01_q18_01"/>
+            <Tile name="Wizards Den 2x2" tilenum="255" model="tin01_s18_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

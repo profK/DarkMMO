@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tib01" displayName="Beholder Caves">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Big Chamber" tilenum="32" model="tib01_n05_01"/>
+            <Tile name="Pit Room" tilenum="67" model="tib01_c02_01"/>
+            <Tile name="Pillar Room" tilenum="68" model="tib01_c02_02"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

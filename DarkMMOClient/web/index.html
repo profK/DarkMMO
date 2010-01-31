@@ -1,0 +1,80 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" type="text/css"
+              href="lib/ext/resources/css/ext-all.css" />
+    </head>
+    <body>
+        <script type="text/javascript" src="lib/ext/adapter/jquery/jquery.js"></script>
+        <script type="text/javascript" src="lib/ext/adapter/jquery/jquery-plugins.js"></script>
+        <script type="text/javascript" src="lib/ext/adapter/jquery/ext-jquery-adapter.js"></script>
+        <script type="text/javascript" src="lib/ext/ext-all-debug.js"></script>
+        <script type="text/javascript" src="lib/wwutils/wwutils.js"></script>
+        <script type="text/javascript" src="application/editor_gui.js"></script>
+        <script type="text/javascript" src="lib/wwutils/wwutils.js"></script>
+        <script type="text/javascript" >
+            console.log("here");
+            Ext.onReady(function(){
+                makeGui();
+                Utils.getHTMLDir("assets/tile_sets/", function(array){
+                    // strip the file names
+                    var tileSetFiles = []
+                    for(var i=0;i<array.length;i++){
+                        var name = array[i]
+                        name = name.slice(name.lastIndexOf('/')+1)
+                        if (name.length>0){
+                            tileSetFiles.push(name)
+                        }
+                    }
+                    console.log(tileSetFiles)
+                    var tilesetNames =[]
+                   
+                    function processTileSet(xml, textStatus){
+                        console.log(xml)
+                        $(xml).find('TileSet').each(
+                            function(){
+                                var element = $(this)
+                                var displayName = element.attr('displayName')
+                                console.log(displayName)
+                                tilesetNames.push(displayName)
+                            }
+                        )
+                        if (tileSetFiles.length>0){
+                            getTileSet("assets/tile_sets/"+tileSetFiles.pop());
+                        } else {
+                            console.log(tilesetNames)
+                            setTileSets(tilesetNames)
+                        }
+                    }
+                    function getTileSet(url){
+                        console.log("loading: "+url)
+                        $.ajax({
+                            url: url,
+                            dataType: 'xml',
+                            success: processTileSet,
+                            error: function(XMLHttpRequest, textStatus,
+                            errorThrown){
+                                Ext.MessageBox.alert(
+                                    "Failure loading tileset",
+                                    textStatus+":"+errorThrown
+                                )
+                            }
+                        })
+                    }
+                    console.log("startng xml loads")
+                    getTileSet("assets/tile_sets/"+tileSetFiles.pop());
+                  
+                }, function(msg){
+                    console.log(msg)
+                    Ext.MessageBox.alert("Dir load failure", msg)
+                })
+            })
+        </script>
+    </body>
+</html>

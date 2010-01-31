@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tts01" displayName="Rural Winter">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Ant Hill" tilenum="131" model="tts01_p05_01"/>
+            <Tile name="Bridge Door" tilenum="108" model="tts01_k17_01"/>
+            <Tile name="Caravan Wagon 1" tilenum="281" model="tts01_l10_01"/>
+            <Tile name="Caravan Wagon 2" tilenum="282" model="tts01_l11_01"/>
+            <Tile name="Cave" tilenum="244" model="tts01_r10_01"/>
+            <Tile name="Chessboard" tilenum="246" model="tall_b01_01"/>
+            <Tile name="Crystal" tilenum="118" model="tts01_o07_01"/>
+            <Tile name="Field" tilenum="167" model="tts01_s17_01"/>
+            <Tile name="Footbridge" tilenum="61" model="tts01_g17_01"/>
+            <Tile name="Garden 1" tilenum="173" model="tts01_u12_01"/>
+            <Tile name="Garden 2" tilenum="174" model="tts01_v12_01"/>
+            <Tile name="Granary" tilenum="150" model="tts01_s05_01"/>
+            <Tile name="Graves 1" tilenum="234" model="tts01_o10_01"/>
+            <Tile name="Graves 2" tilenum="235" model="tts01_o10_02"/>
+            <Tile name="Graves 3" tilenum="236" model="tts01_o10_03"/>
+            <Tile name="Graves 4" tilenum="237" model="tts01_o10_04"/>
+            <Tile name="Graves 5" tilenum="238" model="tts01_o10_05"/>
+            <Tile name="House 1" tilenum="213" model="tts01_s07_01"/>
+            <Tile name="House 2" tilenum="233" model="tts01_t07_01"/>
+            <Tile name="Mausoleum 1" tilenum="240" model="tts01_o12_01"/>
+            <Tile name="Mausoleum 2" tilenum="242" model="tts01_o14_01"/>
+            <Tile name="Menhir" tilenum="130" model="tts01_q06_01"/>
+            <Tile name="Orchard" tilenum="168" model="tts01_t17_01"/>
+            <Tile name="Portal" tilenum="245" model="tall_a01_01"/>
+            <Tile name="Ramp" tilenum="205" model="tts01_h17_01"/>
+            <Tile name="Ruined Cart" tilenum="210" model="tts01_h02_03"/>
+            <Tile name="Shrine 1" tilenum="113" model="tts01_q05_01"/>
+            <Tile name="Shrine 2" tilenum="239" model="tts01_o11_01"/>
+            <Tile name="Snow" tilenum="290" model="tts01_r08_01"/>
+            <Tile name="Snowdrift" tilenum="287" model="tts01_r05_01"/>
+            <Tile name="Snowdrift" tilenum="288" model="tts01_r06_01"/>
+            <Tile name="Snowdrift" tilenum="289" model="tts01_r07_01"/>
+            <Tile name="Tower" tilenum="222" model="tts01_u01_01"/>
+            <Tile name="Tree" tilenum="241" model="tts01_o13_01"/>
+            <Tile name="Tree Hollow" tilenum="129" model="tts01_p07_01"/>
+            <Tile name="Turf House" tilenum="280" model="tts01_l03_01"/>
+            <Tile name="Wall 1 Gate" tilenum="88" model="tts01_i17_01"/>
+            <Tile name="Wall 1 Gate w/ Road" tilenum="75" model="tts01_h18_01"/>
+            <Tile name="Wall 1 Over Stream" tilenum="62" model="tts01_g18_01"/>
+            <Tile name="Wall 2 Gate" tilenum="100" model="tts01_j17_01"/>
+            <Tile name="Wall 2 Gate w/ Road" tilenum="76" model="tts01_h19_01"/>
+            <Tile name="Wall 2 Over Stream" tilenum="63" model="tts01_g19_01"/>
+            <Tile name="Warzone 1" tilenum="181" model="tts01_u14_01"/>
+            <Tile name="Warzone 2" tilenum="182" model="tts01_v14_01"/>
+            <Tile name="Well" tilenum="117" model="tts01_o05_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Barn 1 2x2" tilenum="145" model="tts01_s02_01"/>
+            <Tile name="Barn 2 1x2" tilenum="148" model="tts01_s03_01"/>
+            <Tile name="Barn 3 1x2" tilenum="138" model="tts01_s04_01"/>
+            <Tile name="Barracks 1x2" tilenum="214" model="tts01_s18_01"/>
+            <Tile name="Barracks 2x2" tilenum="264" model="tts01_e20_01"/>
+            <Tile name="Cloaktower 2x2" tilenum="277" model="tts01_l02_01"/>
+            <Tile name="Dragon Skeleton 1x2" tilenum="127" model="tts01_o06_01"/>
+            <Tile name="Evil Temple 2x3" tilenum="271" model="tts01_n18_01"/>
+            <Tile name="Farm 1 2x2" tilenum="154" model="tts01_s09_01"/>
+            <Tile name="Farm 2 1x2" tilenum="158" model="tts01_s10_01"/>
+            <Tile name="Farm 3 1x2" tilenum="159" model="tts01_s11_01"/>
+            <Tile name="Field 1 2x2" tilenum="142" model="tts01_s13_01"/>
+            <Tile name="Field 2 2x2" tilenum="164" model="tts01_s15_01"/>
+            <Tile name="Field 3 1x2" tilenum="166" model="tts01_s16_01"/>
+            <Tile name="Good Temple 3x3" tilenum="259" model="tts01_n11_01"/>
+            <Tile name="Guard Tower 1x2" tilenum="266" model="tts01_e18_01"/>
+            <Tile name="Inn 1x2" tilenum="151" model="tts01_s06_01"/>
+            <Tile name="Neutral Temple 2x2" tilenum="251" model="tts01_n04_01"/>
+            <Tile name="Ship Docked 1 2x2" tilenum="178" model="tts01_u17_01"/>
+            <Tile name="Ship Docked 2 2x2" tilenum="230" model="tts01_u19_01"/>
+            <Tile name="Ship Floating 1x2" tilenum="229" model="tts01_v19_01"/>
+            <Tile name="Temple Evil 3x2" tilenum="227" model="tts01_u09_01"/>
+            <Tile name="Temple Good 3x2" tilenum="137" model="tts01_u04_01"/>
+            <Tile name="Temple Neutral 2x2" tilenum="221" model="tts01_u06_01"/>
+            <Tile name="Tower 1x2" tilenum="216" model="tts01_s19_01"/>
+            <Tile name="Turf House 2" tilenum="283" model="tts01_l06_01"/>
+            <Tile name="Warzone 1x2" tilenum="175" model="tts01_u13_01"/>
+            <Tile name="Windmill 2x2" tilenum="170" model="tts01_u11_01"/>
+            <Tile name="Wizard Tower 1x2" tilenum="274" model="tts01_e17_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

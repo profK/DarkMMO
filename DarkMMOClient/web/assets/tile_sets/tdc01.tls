@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tdc01" displayName="Crypt">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Big Door 1" tilenum="66" model="tdc01_g07_01"/>
+            <Tile name="Big Door 2" tilenum="131" model="tdc01_g07_02"/>
+            <Tile name="Bridge Door" tilenum="110" model="tdc01_h07_01"/>
+            <Tile name="Chessboard" tilenum="162" model="tall_b01_01"/>
+            <Tile name="Door Transition" tilenum="166" model="tdc01_g20_01"/>
+            <Tile name="Exit 1" tilenum="67" model="tdc01_o11_01"/>
+            <Tile name="Exit 2" tilenum="68" model="tdc01_p11_01"/>
+            <Tile name="Fence Door 1" tilenum="58" model="tdc01_i07_01"/>
+            <Tile name="Fence Door 2" tilenum="142" model="tdc01_i07_02"/>
+            <Tile name="Mass Grave" tilenum="63" model="tdc01_o04_01"/>
+            <Tile name="Pillar 1" tilenum="103" model="tdc01_p01_01"/>
+            <Tile name="Pillar 2" tilenum="104" model="tdc01_q01_01"/>
+            <Tile name="Pillar 3" tilenum="105" model="tdc01_r01_01"/>
+            <Tile name="Portal" tilenum="161" model="tall_a01_01"/>
+            <Tile name="Stairs Down" tilenum="69" model="tdc01_o13_01"/>
+            <Tile name="Stairs Up" tilenum="70" model="tdc01_p13_01"/>
+            <Tile name="Treasure 1" tilenum="106" model="tdc01_q02_01"/>
+            <Tile name="Treasure 2" tilenum="107" model="tdc01_r02_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Pillar 1x2" tilenum="94" model="tdc01_s13_01"/>
+            <Tile name="Platform 1 2x2" tilenum="82" model="tdc01_s02_01"/>
+            <Tile name="Platform 2 2x2" tilenum="92" model="tdc01_s11_01"/>
+            <Tile name="Platform 3 2x2" tilenum="100" model="tdc01_s18_01"/>
+            <Tile name="Platform 4 1x2" tilenum="88" model="tdc01_s08_01"/>
+            <Tile name="Platform 5 1x2" tilenum="96" model="tdc01_s15_01"/>
+            <Tile name="Stairs Down 2x2" tilenum="74" model="tdc01_o16_01"/>
+            <Tile name="Stairs Up 2x2" tilenum="78" model="tdc01_o19_01"/>
+            <Tile name="Wall Section 1 1x2" tilenum="84" model="tdc01_s04_01"/>
+            <Tile name="Wall Section 2 1x2" tilenum="86" model="tdc01_s06_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

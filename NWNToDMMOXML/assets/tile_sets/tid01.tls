@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tid01" displayName="Drow Interior">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Cell" tilenum="80" model="tid01_h03_01"/>
+            <Tile name="Corridor Stairs Down" tilenum="38" model="tid01_b18_01"/>
+            <Tile name="Corridor Stairs Up" tilenum="39" model="tid01_b19_01"/>
+            <Tile name="Door Transition" tilenum="37" model="tid01_b17_01"/>
+            <Tile name="Room" tilenum="79" model="tid01_h02_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Bedroom" tilenum="82" model="tid01_h09_01"/>
+            <Tile name="Drow Temple" tilenum="61" model="tid01_j04_01"/>
+            <Tile name="room 1x2" tilenum="84" model="tid01_h06_01"/>
+            <Tile name="Under Well" tilenum="94" model="tid01_j08_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

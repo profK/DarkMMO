@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tti01" displayName="Frozen Wastes">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Cave" tilenum="47" model="tti01_j02_01"/>
+            <Tile name="Chessboard" tilenum="33" model="tall_b01_01"/>
+            <Tile name="Crystal" tilenum="50" model="tti01_j04_01"/>
+            <Tile name="Evil Castle Breach" tilenum="44" model="tti01_c07_01"/>
+            <Tile name="Evil Castle Main Door" tilenum="43" model="tti01_c06_01"/>
+            <Tile name="Evil Castle Small Door" tilenum="45" model="tti01_c07_02"/>
+            <Tile name="Evil Entrance" tilenum="67" model="tti01_j05_01"/>
+            <Tile name="Ice Crater" tilenum="68" model="tti01_a09_01"/>
+            <Tile name="Market 1" tilenum="71" model="tti01_n07_01"/>
+            <Tile name="Market 2" tilenum="70" model="tti01_n06_01"/>
+            <Tile name="Portal" tilenum="32" model="tall_a01_01"/>
+            <Tile name="Ramp" tilenum="46" model="tti01_j01_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Dragon Skeleton 1x2" tilenum="48" model="tti01_j03_01"/>
+            <Tile name="Evil Temple 2x3" tilenum="60" model="tti01_l06_01"/>
+            <Tile name="Evil Temple 2x3" tilenum="66" model="tti01_l09_01"/>
+            <Tile name="Neutral Temple 2x2" tilenum="54" model="tti01_l03_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

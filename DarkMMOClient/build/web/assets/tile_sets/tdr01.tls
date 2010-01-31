@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tdr01" displayName="Ruins">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Bridge Door" tilenum="110" model="tdr01_h37_01"/>
+            <Tile name="Chessboard" tilenum="162" model="tall_b01_01"/>
+            <Tile name="Exterior Door Transition" tilenum="63" model="tdr01_g50_01"/>
+            <Tile name="Exterior Exit 1" tilenum="67" model="tdr01_o41_01"/>
+            <Tile name="Exterior Exit 2" tilenum="68" model="tdr01_p41_01"/>
+            <Tile name="Exterior Fence Door" tilenum="142" model="tdr01_i37_02"/>
+            <Tile name="Exterior Fountain" tilenum="131" model="tdr01_p32_01"/>
+            <Tile name="Exterior Hall Door" tilenum="264" model="tdr01_g37_01"/>
+            <Tile name="Exterior Overgrown Garden" tilenum="103" model="tdr01_p38_01"/>
+            <Tile name="Exterior Ruined Building" tilenum="165" model="tdr01_p34_01"/>
+            <Tile name="Exterior Stairs Down" tilenum="244" model="tdr01_o43_01"/>
+            <Tile name="Exterior Stairs Up" tilenum="245" model="tdr01_p43_01"/>
+            <Tile name="Exterior Water Pool" tilenum="104" model="tdr01_p39_01"/>
+            <Tile name="Interior Door Transition" tilenum="166" model="tdr01_g20_01"/>
+            <Tile name="Interior Fence Door" tilenum="58" model="tdr01_i07_01"/>
+            <Tile name="Interior Hall Door" tilenum="66" model="tdr01_g07_01"/>
+            <Tile name="Interior Rubble" tilenum="105" model="tdr01_p04_01"/>
+            <Tile name="Interior Sleeping Platform" tilenum="269" model="tdr01_p02_01"/>
+            <Tile name="Interior Stairs Down" tilenum="69" model="tdr01_o13_01"/>
+            <Tile name="Interior Stairs Up" tilenum="70" model="tdr01_p13_01"/>
+            <Tile name="Interior Wall Fountain" tilenum="123" model="tdr01_p06_01"/>
+            <Tile name="Portal" tilenum="161" model="tall_a01_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Desert Interior 1 2x2" tilenum="22" model="tdr01_u09_01"/>
+            <Tile name="Desert Interior 2 2x2" tilenum="30" model="tdr01_u15_01"/>
+            <Tile name="Desert Interior 3 2x2" tilenum="34" model="tdr01_u18_01"/>
+            <Tile name="Exterior Amphitheater 2x2" tilenum="94" model="tdr01_s41_01"/>
+            <Tile name="Exterior Fountain 1x2" tilenum="109" model="tdr01_a09_01"/>
+            <Tile name="Exterior Mosaic 2x2" tilenum="270" model="tdr01_j32_01"/>
+            <Tile name="Exterior Ruined Tower 2x2" tilenum="90" model="tdr01_s35_01"/>
+            <Tile name="Exterior Stage 2x2" tilenum="82" model="tdr01_s32_01"/>
+            <Tile name="Exterior Stairs Down 2x2" tilenum="74" model="tdr01_o46_01"/>
+            <Tile name="Exterior Stairs Up 2x2" tilenum="78" model="tdr01_o49_01"/>
+            <Tile name="Exterior Walkway 2x2" tilenum="100" model="tdr01_s38_01"/>
+            <Tile name="Interior Mosaic 2x2" tilenum="84" model="tdr01_o09_01"/>
+            <Tile name="Tent Interior 2x2" tilenum="14" model="tdr01_u06_01"/>
+            <Tile name="Turfhouse Interior 2x2" tilenum="26" model="tdr01_u12_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

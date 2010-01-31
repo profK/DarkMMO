@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tcn01" displayName="City Exterior">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Boat" tilenum="298" model="tcn01_b20_02"/>
+            <Tile name="Boathouse" tilenum="215" model="tcn01_b02_02"/>
+            <Tile name="Bridge Door" tilenum="193" model="tcn01_l07_01"/>
+            <Tile name="Building Wall Breach" tilenum="304" model="tcn01_r07_01"/>
+            <Tile name="Building Wall Temple" tilenum="198" model="tcn01_c02_06"/>
+            <Tile name="Burned Building" tilenum="130" model="tcn01_p05_01"/>
+            <Tile name="Cave Entrance" tilenum="273" model="tcn01_o10_01"/>
+            <Tile name="Chessboard" tilenum="319" model="tall_b01_01"/>
+            <Tile name="Construction" tilenum="129" model="tcn01_p06_01"/>
+            <Tile name="Destroyed Building 1" tilenum="257" model="tcn01_r12_01"/>
+            <Tile name="Destroyed Building 2" tilenum="263" model="tcn01_p10_01"/>
+            <Tile name="Destroyed Building 3" tilenum="256" model="tcn01_q12_01"/>
+            <Tile name="Dock Door" tilenum="187" model="tcn01_k07_01"/>
+            <Tile name="Elevation Door" tilenum="299" model="tcn01_o11_01"/>
+            <Tile name="Elevation Tower 1" tilenum="317" model="tcn01_o13_01"/>
+            <Tile name="Elevation Tower 2" tilenum="316" model="tcn01_o14_01"/>
+            <Tile name="Evil Castle Breach" tilenum="25" model="tcn01_d07_01"/>
+            <Tile name="Evil Castle Main Door" tilenum="26" model="tcn01_d06_01"/>
+            <Tile name="Evil Castle Small Door" tilenum="228" model="tcn01_d07_02"/>
+            <Tile name="Flower Garden" tilenum="128" model="tcn01_p04_01"/>
+            <Tile name="Footbridge" tilenum="181" model="tcn01_j07_01"/>
+            <Tile name="Fountain" tilenum="124" model="tcn01_p02_01"/>
+            <Tile name="Gazebo" tilenum="146" model="tcn01_o07_01"/>
+            <Tile name="Good Castle Breach" tilenum="34" model="tcn01_e07_01"/>
+            <Tile name="Good Castle Main Door" tilenum="33" model="tcn01_e06_01"/>
+            <Tile name="Good Castle Small Door" tilenum="231" model="tcn01_e07_02"/>
+            <Tile name="House" tilenum="54" model="tcn01_s05_01"/>
+            <Tile name="Market 1" tilenum="45" model="tcn01_o02_01"/>
+            <Tile name="Market 2" tilenum="46" model="tcn01_o02_02"/>
+            <Tile name="Plaza 1" tilenum="120" model="tcn01_q05_01"/>
+            <Tile name="Plaza 2" tilenum="121" model="tcn01_r05_01"/>
+            <Tile name="Portal" tilenum="318" model="tall_a01_01"/>
+            <Tile name="Ramp" tilenum="274" model="tcn01_o12_01"/>
+            <Tile name="Sewer Entrance 1" tilenum="133" model="tcn01_p07_01"/>
+            <Tile name="Sewer Entrance 2" tilenum="134" model="tcn01_q07_01"/>
+            <Tile name="Slum House 1" tilenum="50" model="tcn01_s01_01"/>
+            <Tile name="Slum House 2" tilenum="51" model="tcn01_s02_01"/>
+            <Tile name="Slum Market 1" tilenum="114" model="tcn01_q02_01"/>
+            <Tile name="Slum Market 2" tilenum="115" model="tcn01_r02_01"/>
+            <Tile name="Streetlight" tilenum="49" model="tcn01_o05_01"/>
+            <Tile name="Tree" tilenum="47" model="tcn01_o03_01"/>
+            <Tile name="Vegetable Garden" tilenum="125" model="tcn01_p03_01"/>
+            <Tile name="Wagon" tilenum="48" model="tcn01_o04_01"/>
+            <Tile name="Wall Chunk" tilenum="260" model="tcn01_p01_01"/>
+            <Tile name="Wall Gap 1" tilenum="258" model="tcn01_h05_02"/>
+            <Tile name="Wall Gap 2" tilenum="259" model="tcn01_h05_03"/>
+            <Tile name="Wall Gate" tilenum="42" model="tcn01_h07_01"/>
+            <Tile name="Well" tilenum="147" model="tcn01_o06_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Arena 3x3" tilenum="143" model="tcn01_w14_01"/>
+            <Tile name="Barracks 2x2" tilenum="102" model="tcn01_s20_01"/>
+            <Tile name="Burned Building 2x1" tilenum="131" model="tcn01_q11_01"/>
+            <Tile name="City Gate 2x2" tilenum="239" model="tcn01_o17_01"/>
+            <Tile name="Cloaktower 2x2" tilenum="282" model="tcn01_u02_01"/>
+            <Tile name="Destroyed Building 1x2" tilenum="261" model="tcn01_q10_01"/>
+            <Tile name="Evil Temple 2x3" tilenum="250" model="tcn01_w18_01"/>
+            <Tile name="Flower Garden 1x2" tilenum="126" model="tcn01_q09_01"/>
+            <Tile name="Fountain 1x2" tilenum="122" model="tcn01_q06_01"/>
+            <Tile name="Giant Tree 2x2" tilenum="294" model="tcn01_o09_01"/>
+            <Tile name="Good Temple 3x3" tilenum="97" model="tcn01_w11_01"/>
+            <Tile name="Guard Tower 1x2" tilenum="135" model="tcn01_s18_01"/>
+            <Tile name="Holy Pool 2x2" tilenum="279" model="tcn01_q14_01"/>
+            <Tile name="House 1 2x3" tilenum="88" model="tcn01_w16_01"/>
+            <Tile name="House 10 1x2" tilenum="61" model="tcn01_s10_01"/>
+            <Tile name="House 2 2x2" tilenum="110" model="tcn01_u04_01"/>
+            <Tile name="House 3 2x2" tilenum="79" model="tcn01_u18_01"/>
+            <Tile name="House 4 2x2" tilenum="75" model="tcn01_u16_01"/>
+            <Tile name="House 5 2x2" tilenum="71" model="tcn01_u08_01"/>
+            <Tile name="House 6 2x2" tilenum="67" model="tcn01_u06_01"/>
+            <Tile name="House 7 1x2" tilenum="63" model="tcn01_s11_01"/>
+            <Tile name="House 8 1x2" tilenum="104" model="tcn01_s13_01"/>
+            <Tile name="House 9 1x2" tilenum="106" model="tcn01_s14_01"/>
+            <Tile name="Market 2x1" tilenum="112" model="tcn01_q01_01"/>
+            <Tile name="Neutral Temple 2x2" tilenum="83" model="tcn01_w04_01"/>
+            <Tile name="Plaza 2x2" tilenum="118" model="tcn01_q04_01"/>
+            <Tile name="Ruined Park 1x2" tilenum="55" model="tcn01_s07_01"/>
+            <Tile name="Ruined Tower 2x2" tilenum="301" model="tcn01_s16_01"/>
+            <Tile name="Ship Docked 2x2" tilenum="243" model="tcn01_o20_01"/>
+            <Tile name="Ship Floating 1x2" tilenum="253" model="tcn01_q19_01"/>
+            <Tile name="Slum House 1x2" tilenum="52" model="tcn01_s03_01"/>
+            <Tile name="Slum Inn 1 1x2" tilenum="57" model="tcn01_s08_01"/>
+            <Tile name="Slum Inn 2 1x2" tilenum="59" model="tcn01_s09_01"/>
+            <Tile name="State Building 1" tilenum="286" model="tcn01_w08_01"/>
+            <Tile name="State Building 2" tilenum="295" model="tcn01_w06_01"/>
+            <Tile name="Wizard Tower 1x2" tilenum="275" model="tcn01_s17_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>

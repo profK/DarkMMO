@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TileSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemae/tilesets.xsd">
+   <TileSet name="tdm01" displayName="Mines and Caverns">
+      <TileGroups>
+         <TileGroup name="Features" tileType="FEATURES" >
+            <Tile name="Big Door 1" tilenum="114" model="tdm01_o09_01"/>
+            <Tile name="Big Door 2" tilenum="195" model="tdm01_o09_02"/>
+            <Tile name="Big Door 3" tilenum="115" model="tdm01_p09_01"/>
+            <Tile name="Big Door 4" tilenum="196" model="tdm01_p09_02"/>
+            <Tile name="Bridge Door" tilenum="185" model="tdm01_j07_01"/>
+            <Tile name="Chessboard" tilenum="236" model="tall_b01_01"/>
+            <Tile name="Crystal Casket 1" tilenum="230" model="tdm01_u04_01"/>
+            <Tile name="Crystal Casket 2" tilenum="229" model="tdm01_v04_01"/>
+            <Tile name="Crystal Crypt 1" tilenum="231" model="tdm01_u06_01"/>
+            <Tile name="Crystal Crypt 2" tilenum="232" model="tdm01_u07_01"/>
+            <Tile name="Door Transition" tilenum="239" model="tdm01_z20_01"/>
+            <Tile name="Exit 1" tilenum="116" model="tdm01_o11_01"/>
+            <Tile name="Exit 2" tilenum="117" model="tdm01_p11_01"/>
+            <Tile name="Exit 3" tilenum="198" model="tdm01_p11_02"/>
+            <Tile name="Fence Door 1" tilenum="98" model="tdm01_k07_01"/>
+            <Tile name="Fence Door 2" tilenum="191" model="tdm01_k07_02"/>
+            <Tile name="Ice Column" tilenum="109" model="tdm01_p01_01"/>
+            <Tile name="Mineshaft" tilenum="193" model="tdm01_p06_01"/>
+            <Tile name="Pillar 1" tilenum="110" model="tdm01_q01_01"/>
+            <Tile name="Pillar 2" tilenum="111" model="tdm01_r01_01"/>
+            <Tile name="Portal" tilenum="235" model="tall_a01_01"/>
+            <Tile name="Stairs Down 1" tilenum="118" model="tdm01_o13_01"/>
+            <Tile name="Stairs Down 2" tilenum="120" model="tdm01_q13_01"/>
+            <Tile name="Stairs Up 1" tilenum="119" model="tdm01_p13_01"/>
+            <Tile name="Stairs Up 2" tilenum="121" model="tdm01_r13_01"/>
+            <Tile name="Treasure 1" tilenum="112" model="tdm01_q02_01"/>
+            <Tile name="Treasure 2" tilenum="113" model="tdm01_r02_01"/>
+         </TileGroup>
+         <TileGroup name="Groups" tileType="GROUPS" >
+            <Tile name="Pillar 1x2" tilenum="138" model="tdm01_s08_01"/>
+            <Tile name="Platform 1 2x2" tilenum="132" model="tdm01_s02_01"/>
+            <Tile name="Platform 2 2x2" tilenum="142" model="tdm01_s11_01"/>
+            <Tile name="Platform 3 2x2" tilenum="150" model="tdm01_s18_01"/>
+            <Tile name="Platform 4 1x2" tilenum="144" model="tdm01_s13_01"/>
+            <Tile name="Platform 5 1x2" tilenum="146" model="tdm01_s15_01"/>
+            <Tile name="Portal 2x2" tilenum="228" model="tdm01_u02_01"/>
+            <Tile name="Stairs Down 2x2" tilenum="124" model="tdm01_o16_01"/>
+            <Tile name="Stairs Up 2x2" tilenum="128" model="tdm01_o19_01"/>
+            <Tile name="Wall Section 1 1x2" tilenum="134" model="tdm01_s04_01"/>
+            <Tile name="Wall Section 2 1x2" tilenum="136" model="tdm01_s06_01"/>
+         </TileGroup>
+         <TileGroup name="Terrain" tileType="TERRAIN" >
+         </TileGroup>
+      </TileGroups>
+   </TileSet>
+</TileSets>
