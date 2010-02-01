@@ -6,21 +6,47 @@
 
 (function() {
     var _tileSetStore= new Ext.data.SimpleStore({
-        data:[['foo'],['bar']],
-        fields:['tileset']
+        data:[['foo','Foo'],['bar','Bar']],
+        fields:['name','displayName']
     })
-    var _tilesStore = new Ext.data.SimpleStore({
-        data: [['foo'],['bar']],
-        fields: ['tilename']
-    });
+    var _tileSetSelectionListener
     GUI = {
         setTileSets: function(array){
-            array.sort();
-            var arrayArray = []
-            for (var i=0;i<array.length;i++){
-                arrayArray.push([array[i]])
+            array.sort(function(a,b){
+                if (a[1]<b[1]){
+                    return -1
+                } else if(a[1]>b[1]){
+                    return 1;
+                }else {
+                    return 0;
+                }
+            }); 
+            _tileSetStore.loadData(array)
+        },
+        setTileSetSelectionListener: function(callback){
+          _tileSetSelectionListener = callback
+        },
+        setTileGroups: function (groupNames){
+            var items = []
+            for(var i = 0; i<groupNames.length;i++){
+                items.push({
+                    title: groupNames[i],
+                    items: [{
+                        xtype: 'grid',
+                        id:'group_'+groupNames[i],
+                        store: new Ext.data.SimpleStore({
+                            data: [['foo'],['bar']],
+                            fields: ['tilename']
+                        }),
+                        autoHeight: true,
+                        autoWidth: true,
+                        columns: [{
+                            header: 'Tile Name',
+                            dataIndex: 'tilename'
+                        }]
+                    }]
+                })
             }
-            _tileSetStore.loadData(arrayArray)
         },
         makeGui: function(){
    
@@ -28,92 +54,60 @@
                 layout: 'border',
                 renderTo: Ext.getBody(),
                 items: [{
+                    region: 'north',
+                    xtype: 'toolbar',
+                    items: [{
+                        xtype: 'tbbutton',
+                        text: 'File',
+                        menu: [{
+                            text: 'Load'
+                        }, {
+                            text: 'Save'
+                        }]
+                    }]
+                }, {
+                    region: 'south',
+                    xtype: 'panel',
+                    html: 'South'
+                }, {
+                    region: 'east',
+                    layout: 'border',
+                    title: 'Tile Sets',
+                    width: 200,
+                    items: [{
                         region: 'north',
-                        xtype: 'toolbar',
-                        items: [{
-                                xtype: 'tbbutton',
-                                text: 'File',
-                                menu: [{
-                                        text: 'Load'
-                                    }, {
-                                        text: 'Save'
-                                    }]
-                            }]
-                    }, {
-                        region: 'south',
-                        xtype: 'panel',
-                        html: 'South'
-                    }, {
-                        region: 'east',
-                        layout: 'border',
-                        title: 'Tile Sets',
-                        width: 200,
-                        items: [{
-                                region: 'north',
-                                xtype: 'combo',
-                                name: 'tileSetSelector',
-                                editable: false,
-                                clearFilterOnReset: true,
-                                triggerAction: 'all',
-                                lastQuery: '', // == allQuery
-                                mode: 'local',
-                                store: _tileSetStore,
-                                displayField: 'tileset',
-                                height: 100,
-                                id: 'tileSetCombo'
-                            }, {
-                                region: 'center',
-                                layout: 'accordion',
-                                items: [{
-                                        title: 'Features',
-                                        items: [{
-                                                xtype: 'grid',
-                                                id:'featuresGrid',
-                                                store: _tilesStore,
-                                                autoHeight: true,
-                                                autoWidth: true,
-                                                columns: [{
-                                                        header: 'Tile Name',
-                                                        dataIndex: 'tilename'
-                                                    }]
-                                            }]
-                                    }, {
-                                        title: 'Groups',
-                                        items: [{
-                                                xtype: 'grid',
-                                                id:'groupsGrid',
-                                                store: _tilesStore,
-                                                autoHeight: true,
-                                                autoWidth: true,
-                                                columns: [{
-                                                        header: 'Tile Name',
-                                                        dataIndex: 'tilename'
-                                                    }]
-                                            }]
-                                    }, {
-                                        title: 'Terrain',
-                                        items: [{
-                                                xtype: 'grid',
-                                                id:'terrainGrid',
-                                                store: _tilesStore,
-                                                autoHeight: true,
-                                                autoWidth: true,
-                                                columns: [{
-                                                        header: 'Tile Name',
-                                                        dataIndex: 'tilename'
-                                                    }]
-                                            }]
-                                    }]
-                            }]
-                    }, {
-                        region: 'west',
-                        xtype: 'panel',
-                        html: 'West'
+                        xtype: 'combo',
+                        name: 'tileSetSelector',
+                        editable: false,
+                        clearFilterOnReset: true,
+                        triggerAction: 'all',
+                        lastQuery: '', // == allQuery
+                        mode: 'local',
+                        store: _tileSetStore,
+                        displayField: 'displayName',
+                        height: 100,
+                        id: 'tileSetCombo',
+                        listeners:{
+                            'select': function(combo,rec,idx){
+                                if (_tileSetSelectionListener){
+                                    _tileSetSelectionListener(combo,rec,idx)
+                                }
+                            }
+                        }
                     }, {
                         region: 'center',
-                        xtype: 'panel',
-                        html: 'Center'
+                        layout: 'accordion',
+                        id: 'tileAccordion'
                     }]
+                }, {
+                    region: 'west',
+                    xtype: 'panel',
+                    html: 'West'
+                }, {
+                    region: 'center',
+                    xtype: 'panel',
+                    html: 'Center'
+                }]
             });
             console.log(viewport)
         }

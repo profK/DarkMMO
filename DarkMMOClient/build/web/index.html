@@ -17,62 +17,26 @@ and open the template in the editor.
         <script type="text/javascript" src="lib/ext/ext-all-debug.js"></script>
         <script type="text/javascript" src="lib/wwutils/wwutils.js"></script>
         <script type="text/javascript" src="application/editor_gui.js"></script>
+        <script type="text/javascript" src="application/tilesets.js"></script>
         <script type="text/javascript" src="lib/wwutils/wwutils.js"></script>
+
         <script type="text/javascript" >
             console.log("here");
             Ext.onReady(function(){
                 GUI.makeGui();
-                Utils.getHTMLDir("assets/tile_sets/", function(array){
-                    // strip the file names
-                    var tileSetFiles = []
-                    for(var i=0;i<array.length;i++){
-                        var name = array[i]
-                        name = name.slice(name.lastIndexOf('/')+1)
-                        if (name.length>0){
-                            tileSetFiles.push(name)
-                        }
+                GUI.setTileSetSelectionListener(function(combo,rec,index){
+                        console.log(rec)
+                    })
+                new TileSets("assets",function(tileSetsObj){
+                    var tileSets=[]
+                    for (var key in tileSetsObj.tileSetMap){
+                        tileSets.push(
+                        [key,tileSetsObj.tileSetMap[key].attr('displayName')])
                     }
-                    console.log(tileSetFiles)
-                    var tilesetNames =[]
-                   
-                    function processTileSet(xml, textStatus){
-                        console.log(xml)
-                        $(xml).find('TileSet').each(
-                            function(){
-                                var element = $(this)
-                                var displayName = element.attr('displayName')
-                                console.log(displayName)
-                                tilesetNames.push(displayName)
-                            }
-                        )
-                        if (tileSetFiles.length>0){
-                            getTileSet("assets/tile_sets/"+tileSetFiles.pop());
-                        } else {
-                            console.log(tilesetNames)
-                            GUI.setTileSets(tilesetNames)
-                        }
-                    }
-                    function getTileSet(url){
-                        console.log("loading: "+url)
-                        $.ajax({
-                            url: url,
-                            dataType: 'xml',
-                            success: processTileSet,
-                            error: function(XMLHttpRequest, textStatus,
-                            errorThrown){
-                                Ext.MessageBox.alert(
-                                    "Failure loading tileset",
-                                    textStatus+":"+errorThrown
-                                )
-                            }
-                        })
-                    }
-                    console.log("startng xml loads")
-                    getTileSet("assets/tile_sets/"+tileSetFiles.pop());
-                  
-                }, function(msg){
-                    console.log(msg)
-                    Ext.MessageBox.alert("Dir load failure", msg)
+                    GUI.setTileSets(tileSets)
+                    
+                },function(errMsg){
+                    Ext.MessageBox.alert("Error loading tile sets", msg)
                 })
             })
         </script>
