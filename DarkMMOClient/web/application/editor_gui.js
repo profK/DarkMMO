@@ -5,7 +5,7 @@
 
 
 (function() {
-    var _tileSetStore= new Ext.data.SimpleStore({
+    var _tileSetStore= new Ext.data.ArrayStore({
         data:[['foo','Foo'],['bar','Bar']],
         fields:['name','displayName']
     })
@@ -26,27 +26,33 @@
         setTileSetSelectionListener: function(callback){
           _tileSetSelectionListener = callback
         },
-        setTileGroups: function (groupNames){
-            var items = []
-            for(var i = 0; i<groupNames.length;i++){
-                items.push({
-                    title: groupNames[i],
-                    items: [{
-                        xtype: 'grid',
-                        id:'group_'+groupNames[i],
-                        store: new Ext.data.SimpleStore({
-                            data: [['foo'],['bar']],
-                            fields: ['tilename']
-                        }),
-                        autoHeight: true,
-                        autoWidth: true,
-                        columns: [{
-                            header: 'Tile Name',
-                            dataIndex: 'tilename'
-                        }]
+        setTileAccordionData: function(dataObjectArray){
+           var accordion = Ext.ComponentMgr.get('tileAccordion')
+           console.log(accordion)
+           accordion.removeAll(true)
+           for(var i=0;i<dataObjectArray.length;i++){
+               var store =  new Ext.data.ArrayStore({
+                    data:dataObjectArray[i].data,
+                    fields:['tilenum','displayName','model']
+               })
+               var list =new Ext.list.ListView({
+                    store: store,
+                    multiSelect: true,
+                    emptyText: 'No images to display',
+                    reserveScrollOffset: true,
+                    columns: [{
+                        dataIndex: 'displayName',
+                        align: 'left'
                     }]
                 })
+                var panel = new Ext.Panel({
+                    title:dataObjectArray[i].groupName,
+                    autoScroll: true
+                })
+                panel.add(list)
+                accordion.add(panel)
             }
+            accordion.doLayout()
         },
         makeGui: function(){
    
@@ -98,6 +104,7 @@
                         region: 'center',
                         layout: 'accordion',
                         id: 'tileAccordion'
+                       
                     }]
                 }, {
                     region: 'west',

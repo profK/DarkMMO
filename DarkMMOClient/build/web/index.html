@@ -11,10 +11,9 @@ and open the template in the editor.
               href="lib/ext/resources/css/ext-all.css" />
     </head>
     <body>
-        <script type="text/javascript" src="lib/ext/adapter/jquery/jquery.js"></script>
-        <script type="text/javascript" src="lib/ext/adapter/jquery/jquery-plugins.js"></script>
-        <script type="text/javascript" src="lib/ext/adapter/jquery/ext-jquery-adapter.js"></script>
-        <script type="text/javascript" src="lib/ext/ext-all-debug.js"></script>
+        <script type="text/javascript" src="lib/jquery/jquery-1.3.2.js"></script>
+        <script type="text/javascript" src="lib/ext3/adapter/jquery/ext-jquery-adapter.js"></script>
+        <script type="text/javascript" src="lib/ext3/ext-all-debug.js"></script>
         <script type="text/javascript" src="lib/wwutils/wwutils.js"></script>
         <script type="text/javascript" src="application/editor_gui.js"></script>
         <script type="text/javascript" src="application/tilesets.js"></script>
@@ -25,15 +24,43 @@ and open the template in the editor.
             Ext.onReady(function(){
                 GUI.makeGui();
                 GUI.setTileSetSelectionListener(function(combo,rec,index){
-                        console.log(rec)
+                    console.log(rec)
+                    var tsetName = rec.data.name
+                    console.log(tsetName)
+                    var tileSet = tileSets[tsetName]
+                    console.log(tileSet)
+                    var accordionData= []
+                    tileSet.find('TileGroup').each(function(){
+                        var element = $(this)
+                        var accordionObj = {
+                            groupName:element.attr('name'),
+                            groupType:element.attr('tileType'),
+                            data:[]
+                        }
+                        accordionData.push(accordionObj)
+                        //console.log(element)
+                        element.find('Tile').each(function(){
+                            var tile = $(this)
+                            //console.log(tile)
+                            accordionObj.data.push([
+                              tile.attr('tilenum'),
+                              tile.attr('name'),
+                              tile.attr('model')
+                            ])
+                        })
                     })
-                new TileSets("assets",function(tileSetsObj){
-                    var tileSets=[]
+                    console.log(accordionData)
+                    GUI.setTileAccordionData(accordionData)
+                })
+                var tileSets;
+                LoadTileSets("assets",function(tileSetsObj){
+                    tileSets = tileSetsObj.tileSetMap
+                    var tileSetNames=[]
                     for (var key in tileSetsObj.tileSetMap){
-                        tileSets.push(
+                        tileSetNames.push(
                         [key,tileSetsObj.tileSetMap[key].attr('displayName')])
                     }
-                    GUI.setTileSets(tileSets)
+                    GUI.setTileSets(tileSetNames)
                     
                 },function(errMsg){
                     Ext.MessageBox.alert("Error loading tile sets", msg)
