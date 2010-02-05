@@ -8,7 +8,7 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>TODO supply a title</title>
         <link rel="stylesheet" type="text/css"
-              href="lib/ext/resources/css/ext-all.css" />
+              href="lib/ext3/resources/css/ext-all.css" />
     </head>
     <body>
         <script type="text/javascript" src="lib/jquery/jquery-1.3.2.js"></script>
@@ -20,9 +20,10 @@ and open the template in the editor.
         <script type="text/javascript" src="lib/wwutils/wwutils.js"></script>
 
         <script type="text/javascript" >
-            console.log("here");
-            Ext.onReady(function(){
-                GUI.makeGui();
+            var currentTileNum=-1
+            var currentTileModelName=""
+            Ext.onReady(function(){           
+                GUI.makeGui();           
                 GUI.setTileSetSelectionListener(function(combo,rec,index){
                     console.log(rec)
                     var tsetName = rec.data.name
@@ -51,6 +52,10 @@ and open the template in the editor.
                     })
                     console.log(accordionData)
                     GUI.setTileAccordionData(accordionData)
+                }) 
+                GUI.setTileSelectionListener(function(view,nodes){
+                    var rec = view.getRecord(view.getNode(nodes)).json
+                    setCurrentTile(rec[0],rec[2])
                 })
                 var tileSets;
                 LoadTileSets("assets",function(tileSetsObj){
@@ -62,9 +67,15 @@ and open the template in the editor.
                     }
                     GUI.setTileSets(tileSetNames)
                     
-                },function(errMsg){
+                },function(msg){
                     Ext.MessageBox.alert("Error loading tile sets", msg)
                 })
+
+                function setCurrentTile(tileNum,tileModelName){
+                    currentTileNum = tileNum
+                    currentTileModelName = tileModelName;
+                    // load tile through tile cache and set in map
+                }
             })
         </script>
     </body>

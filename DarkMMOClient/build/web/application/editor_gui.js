@@ -9,7 +9,8 @@
         data:[['foo','Foo'],['bar','Bar']],
         fields:['name','displayName']
     })
-    var _tileSetSelectionListener
+    var _tileSetSelectionListener;
+    var _tileSelectionListener;
     GUI = {
         setTileSets: function(array){
             array.sort(function(a,b){
@@ -24,32 +25,48 @@
             _tileSetStore.loadData(array)
         },
         setTileSetSelectionListener: function(callback){
-          _tileSetSelectionListener = callback
+            _tileSetSelectionListener = callback
+        },
+        setTileSelectionListener: function(callback){
+            console.log("Set tile selection listener: "+callback)
+           _tileSelectionListener = callback
         },
         setTileAccordionData: function(dataObjectArray){
-           var accordion = Ext.ComponentMgr.get('tileAccordion')
-           console.log(accordion)
-           accordion.removeAll(true)
-           for(var i=0;i<dataObjectArray.length;i++){
-               var store =  new Ext.data.ArrayStore({
+            var accordion = Ext.ComponentMgr.get('tileAccordion')
+            console.log(accordion)
+            accordion.removeAll(true)
+            var callback = function(view,nodes){
+                console.log(nodes)
+                console.log(_tileSelectionListener)
+                if (_tileSelectionListener){
+                    _tileSelectionListener(view,nodes)
+                }
+            }
+           
+            for(var i=0;i<dataObjectArray.length;i++){
+                var store =  new Ext.data.ArrayStore({
                     data:dataObjectArray[i].data,
                     fields:['tilenum','displayName','model']
-               })
-               var list =new Ext.list.ListView({
+                })
+                var list =new Ext.list.ListView({
                     store: store,
-                    multiSelect: true,
+                    multiSelect: false,
+                    singleSelect:true,
                     emptyText: 'No images to display',
                     reserveScrollOffset: true,
                     columns: [{
                         dataIndex: 'displayName',
-                        align: 'left'
+                        align: 'left',
+                        width:1.0
                     }]
                 })
+                list.on('click',callback)
                 var panel = new Ext.Panel({
                     title:dataObjectArray[i].groupName,
                     autoScroll: true
                 })
                 panel.add(list)
+                list.select(0)
                 accordion.add(panel)
             }
             accordion.doLayout()
